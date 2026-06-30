@@ -28,6 +28,7 @@
       <button data-nav="awards">Awards</button>
       <button data-nav="guides">Guides</button>
       <button data-nav="impact">Impact</button>
+      <button data-nav="robot">Our Robot</button>
       <button data-nav="contact">Contact</button>
     </div>
     <button class="menu-toggle" id="menuToggle" aria-label="Menu" aria-expanded="false">
@@ -44,7 +45,7 @@
     <div class="hero-bg"><div class="scan"></div></div>
     <div class="wrap hero-inner">
       <span class="eyebrow">FIRST Tech Challenge // Team Boltic</span>
-      <h1>BOL<span class="bolt-word">T</span>IC</h1>
+      <h1>BOLTIC</h1>
       <p class="sub">A student robotics team designing, building, and competing in the FIRST Tech Challenge. Engineered with precision. Driven by the next bolt of momentum.</p>
       <div class="meta">
         <span>SEASON <b>2025–26</b></span>
@@ -68,7 +69,7 @@
       </div>
       <div class="about">
         <div class="about-lead">
-          We're a student-led <span class="bolt-word">FTC</span> team turning sketches into machines, and rookies into engineers.
+          We're a student-led FIRST Tech Challenge team turning sketches into machines, and rookies into engineers.
         </div>
         <div class="about-body">
           <p>Boltic is a FIRST Tech Challenge team that designs, builds, and programs a competition robot from scratch every season. We do our own CAD, machining, wiring, and code, and we document the whole process the way real engineers do.</p>
@@ -298,15 +299,13 @@
 
       <div class="award-stats ticked">
         <div class="as"><div class="num"><em>02</em></div><div class="lbl">Awards Won</div></div>
-        <div class="as"><div class="num">2</div><div class="lbl">Seasons Competing</div></div>
-        <div class="as"><div class="num">2025</div><div class="lbl">First Banner</div></div>
+        <div class="as"><div class="num">3</div><div class="lbl">Seasons Competing</div></div>
       </div>
 
-      <!-- 2026 Design Award: team picture + robot photo -->
+      <!-- 2026 Design Award: team picture -->
       <div class="award ticked">
-        <div class="imgs two">
-          <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><span class="mono">Team Photo</span></div>
-          <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="6" y="8" width="12" height="10" rx="1"/><path d="M9 8V5h6v3M9 18v2M15 18v2"/></svg><span class="mono">Robot Photo</span></div>
+        <div class="imgs">
+          <div class="ph"><img src="assets/img/Design Award Boltic.jpg" alt="Design Award Team Photo"></div>
         </div>
         <div class="body">
           <span class="yr">2026</span>
@@ -319,7 +318,7 @@
       <!-- 2025 Judge's Choice: team picture only -->
       <div class="award ticked">
         <div class="imgs">
-          <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><span class="mono">Team Photo</span></div>
+          <div class="ph"><img src="assets/img/Judges Choice Award Boltic.jpg" alt="Judges Choice Award Team Photo"></div>
         </div>
         <div class="body">
           <span class="yr">2025</span>
@@ -342,7 +341,6 @@
           <span class="ah-event">League Qualifier</span>
         </div>
       </div>
-      <p class="edit-note">// Add a row here each time you earn a new award</p>
     </div>
   </section>
 </div>
@@ -357,61 +355,63 @@
         <p>Build logs, tutorials, and resources we share with the community. New videos and docs land here as we publish them.</p>
       </div>
 
-      <!-- Featured: Engineering Notebook -->
-      <div class="featured ticked">
-        <div class="ph">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 4h13a2 2 0 0 1 2 2v14H6a2 2 0 0 1-2-2z"/><path d="M8 4v16M11 9h5M11 13h5"/></svg>
-          <span class="mono">Notebook Cover</span>
-        </div>
-        <div class="f-body">
-          <span class="f-kick">Start here</span>
-          <h3>Engineering Notebook</h3>
-          <p>Our full record of the season: the design process, decisions, tests, and iterations behind the robot. The best single window into how Boltic works.</p>
-          <a class="btn" href="#" target="_blank" rel="noopener">View the notebook</a>
+      <!-- Tab Navigation -->
+      <div class="guides-tabs">
+        <button class="guides-tab active" data-tab="yt-videos">YT Videos</button>
+        <button class="guides-tab" data-tab="notebooks">Notebooks</button>
+        <button class="guides-tab" data-tab="other-resources">Other Resources</button>
+      </div>
+
+      <!-- YT Videos Subtab -->
+      <div class="guides-tab-content active" id="yt-videos">
+        <div class="yt-videos-grid">
+          <div class="yt-column">
+            <div class="yt-column-header">Software</div>
+            <div class="yt-video-item">
+              <div class="yt-video-title">FULL GitHub guide for new FTC teams</div>
+              <div class="yt-video-embed">
+                <iframe src="https://www.youtube.com/embed/a_oY5y-WnkY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="yt-column">
+            <div class="yt-column-header">Design and Hardware</div>
+            <div class="yt-video-item">
+              <div class="yt-video-placeholder">
+                <p>Design and Hardware videos will be added here.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="block-label">Build series &amp; videos</div>
-      <div class="card-grid">
-        <div class="card">
-          <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m10 9 5 3-5 3V9Z"/><rect x="2" y="4" width="20" height="16" rx="3"/></svg><span class="mono">YouTube</span></div>
-          <div class="c-body"><span class="kicker">Video</span><h4>Build Series Ep. 01</h4><p>Swap in a YouTube embed or thumbnail link once the episode is live.</p></div>
-        </div>
-        <div class="card">
-          <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m10 9 5 3-5 3V9Z"/><rect x="2" y="4" width="20" height="16" rx="3"/></svg><span class="mono">YouTube</span></div>
-          <div class="c-body"><span class="kicker">Video</span><h4>CAD Walkthrough</h4><p>A short title and description for each upload keeps the page useful.</p></div>
-        </div>
-        <div class="card">
-          <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m10 9 5 3-5 3V9Z"/><rect x="2" y="4" width="20" height="16" rx="3"/></svg><span class="mono">YouTube</span></div>
-          <div class="c-body"><span class="kicker">Video</span><h4>Match Highlights</h4><p>Drop in season recaps, reveals, or autonomous runs as you film them.</p></div>
+      <!-- Notebooks Subtab -->
+      <div class="guides-tab-content" id="notebooks">
+        <div class="blank-content">
+          <p>Engineering notebooks will be added here.</p>
         </div>
       </div>
 
-      <div class="block-label spaced">Downloads &amp; resources</div>
-      <div class="res-list">
-        <a class="res-row" href="#" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 4v5"/></svg>
-          <span class="r-name">Robot CAD Files</span><span class="r-type">Onshape</span>
-          <svg class="r-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg>
-        </a>
-        <a class="res-row" href="#" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m8 6-4 6 4 6M16 6l4 6-4 6"/></svg>
-          <span class="r-name">Robot Code Repository</span><span class="r-type">GitHub</span>
-          <svg class="r-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg>
-        </a>
-        <a class="res-row" href="#" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
-          <span class="r-name">Engineering Notebook (PDF)</span><span class="r-type">PDF</span>
-          <svg class="r-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg>
-        </a>
-        <a class="res-row" href="#" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-          <span class="r-name">New Team Starter Guide</span><span class="r-type">Guide</span>
-          <svg class="r-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg>
-        </a>
+      <!-- Other Resources Subtab -->
+      <div class="guides-tab-content" id="other-resources">
+        <div class="res-list">
+          <a class="res-row" href="https://gm0.org/en/latest/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 4v5"/></svg>
+            <span class="r-name">Game Manual 0</span><span class="r-type">Official</span>
+            <svg class="r-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </a>
+          <a class="res-row" href="https://www.youtube.com/@BroganMPratt" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m10 9 5 3-5 3V9Z"/></svg>
+            <span class="r-name">Brogan Pratt's YouTube Channel</span><span class="r-type">YouTube</span>
+            <svg class="r-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </a>
+          <a class="res-row" href="https://portfolios.hivemindrobotics.net/ftc" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h13a2 2 0 0 1 2 2v14H6a2 2 0 0 1-2-2z"/><path d="M8 4v16M11 9h5M11 13h5"/></svg>
+            <span class="r-name">FTC Engineering Notebooks Collection</span><span class="r-type">Hivemind</span>
+            <svg class="r-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </a>
+        </div>
       </div>
-
-      <div class="note"><b>Keep this updated.</b> Add a card or a resource row each time you upload a video or publish a doc. Replace the <span class="mono">#</span> links with your real URLs.</div>
     </div>
   </section>
 </div>
@@ -435,9 +435,8 @@
 
       <!-- Mentorship Subtab -->
       <div class="impact-tab-content active" id="mentorship">
-        <div class="flyer-placeholder">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v5"/></svg>
-          <span class="mono">Flyer Placeholder</span>
+        <div class="flyer-image">
+          <img src="assets/img/Mentorship Flyer Boltic.jpeg" alt="Mentorship Flyer">
         </div>
         
         <div class="mentorship-details">
@@ -486,25 +485,254 @@
       <div class="contact-grid">
         <div class="contact-lead">
           <span class="eyebrow">Get in touch</span>
-          <h2>LET'S<br>CONNEC<span class="bolt-word">T</span></h2>
+          <h2>LET'S<br>CONNECT</h2>
           <p>Sponsorship, mentoring, press, or just curious about the team? All inquiries reach us at the contacts on the right.</p>
         </div>
         <div class="contact-rows ticked">
           <div class="crow">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
-            <div><div class="k">Email</div><a class="v" href="mailto:team@boltic.org">team@boltic.org</a></div>
+            <div><div class="k">Email</div><a class="v" href="mailto:bolticteam@gmail.com">bolticteam@gmail.com</a></div>
           </div>
           <div class="crow">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L20 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg>
-            <div><div class="k">Phone</div><a class="v" href="tel:+10000000000">(000) 000-0000</a></div>
+            <div><div class="k">Phone</div><a class="v" href="tel:+18479190451">847-919-0451</a></div>
           </div>
           <div class="crow">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
-            <div><div class="k">Instagram</div><a class="v" href="#">@boltic</a></div>
+            <div><div class="k">Instagram</div><a class="v" href="https://www.instagram.com/boltic_ftc/">@boltic_ftc</a></div>
           </div>
           <div class="crow">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3V9Z" fill="currentColor" stroke="none"/></svg>
-            <div><div class="k">YouTube</div><a class="v" href="#">Boltic Robotics</a></div>
+            <div><div class="k">YouTube</div><a class="v" href="https://www.youtube.com/@Boltic24108">@Boltic24108</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ========== OUR ROBOT ========== -->
+<div class="page" id="robot">
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Our creations</span>
+        <h2>Our Robot</h2>
+        <p>Explore our robots from each competition season. See how our designs evolved and learn about the engineering behind each iteration.</p>
+      </div>
+
+      <!-- Season Tab Navigation -->
+      <div class="season-tabs">
+        <button class="season-tab active" data-tab="center-stage">Center Stage</button>
+        <button class="season-tab" data-tab="into-the-deep">Into the Deep</button>
+        <button class="season-tab" data-tab="decode">Decode</button>
+        <button class="season-tab" data-tab="biobuzz">BioBuzz</button>
+      </div>
+
+      <!-- Center Stage Subtab -->
+      <div class="season-tab-content active" id="center-stage">
+        <div class="robot-section">
+          <div class="robot-section-title">Meet 1</div>
+          <div class="robot-section-grid">
+            <div class="robot-photo-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="6" y="8" width="12" height="10" rx="1"/><path d="M9 8V5h6v3M9 18v2M15 18v2M3 12h3M18 12h3"/></svg>
+              <span class="mono">Robot Photo</span>
+            </div>
+            <div class="robot-desc-box">
+              <p>Description of the robot for Meet 1 will go here.</p>
+            </div>
+          </div>
+        </div>
+        <div class="robot-section">
+          <div class="robot-section-title">Meet 2</div>
+          <div class="robot-section-grid">
+            <div class="robot-photo-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="6" y="8" width="12" height="10" rx="1"/><path d="M9 8V5h6v3M9 18v2M15 18v2M3 12h3M18 12h3"/></svg>
+              <span class="mono">Robot Photo</span>
+            </div>
+            <div class="robot-desc-box">
+              <p>Description of the robot for Meet 2 will go here.</p>
+            </div>
+          </div>
+        </div>
+        <div class="robot-section">
+          <div class="robot-section-title">Meet 3</div>
+          <div class="robot-section-grid">
+            <div class="robot-photo-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="6" y="8" width="12" height="10" rx="1"/><path d="M9 8V5h6v3M9 18v2M15 18v2M3 12h3M18 12h3"/></svg>
+              <span class="mono">Robot Photo</span>
+            </div>
+            <div class="robot-desc-box">
+              <p>Description of the robot for Meet 3 will go here.</p>
+            </div>
+          </div>
+        </div>
+        <div class="robot-section">
+          <div class="robot-section-title">League Tournament</div>
+          <div class="robot-section-grid">
+            <div class="robot-photo-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="6" y="8" width="12" height="10" rx="1"/><path d="M9 8V5h6v3M9 18v2M15 18v2M3 12h3M18 12h3"/></svg>
+              <span class="mono">Robot Photo</span>
+            </div>
+            <div class="robot-desc-box">
+              <p>Description of the robot for League Tournament will go here.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Into the Deep Subtab -->
+      <div class="season-tab-content" id="into-the-deep">
+        <div class="robot-section">
+          <div class="robot-section-title">Meet 1</div>
+          <div class="robot-section-grid">
+            <div class="robot-photo-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="6" y="8" width="12" height="10" rx="1"/><path d="M9 8V5h6v3M9 18v2M15 18v2M3 12h3M18 12h3"/></svg>
+              <span class="mono">Robot Photo</span>
+            </div>
+            <div class="robot-desc-box">
+              <p>Description of the robot for Meet 1 will go here.</p>
+            </div>
+          </div>
+        </div>
+        <div class="robot-section">
+          <div class="robot-section-title">Meet 2</div>
+          <div class="robot-section-grid">
+            <div class="robot-photo-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="6" y="8" width="12" height="10" rx="1"/><path d="M9 8V5h6v3M9 18v2M15 18v2M3 12h3M18 12h3"/></svg>
+              <span class="mono">Robot Photo</span>
+            </div>
+            <div class="robot-desc-box">
+              <p>Description of the robot for Meet 2 will go here.</p>
+            </div>
+          </div>
+        </div>
+        <div class="robot-section">
+          <div class="robot-section-title">Meet 3</div>
+          <div class="robot-section-grid">
+            <div class="robot-photo-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="6" y="8" width="12" height="10" rx="1"/><path d="M9 8V5h6v3M9 18v2M15 18v2M3 12h3M18 12h3"/></svg>
+              <span class="mono">Robot Photo</span>
+            </div>
+            <div class="robot-desc-box">
+              <p>Description of the robot for Meet 3 will go here.</p>
+            </div>
+          </div>
+        </div>
+        <div class="robot-section">
+          <div class="robot-section-title">League Tournament</div>
+          <div class="robot-section-grid">
+            <div class="robot-photo-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="6" y="8" width="12" height="10" rx="1"/><path d="M9 8V5h6v3M9 18v2M15 18v2M3 12h3M18 12h3"/></svg>
+              <span class="mono">Robot Photo</span>
+            </div>
+            <div class="robot-desc-box">
+              <p>Description of the robot for League Tournament will go here.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Decode Subtab -->
+      <div class="season-tab-content" id="decode">
+        <div class="robot-section">
+          <div class="robot-section-title">Meet 1</div>
+          <div class="robot-section-grid">
+            <div class="robot-photo-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="6" y="8" width="12" height="10" rx="1"/><path d="M9 8V5h6v3M9 18v2M15 18v2M3 12h3M18 12h3"/></svg>
+              <span class="mono">Robot Photo</span>
+            </div>
+            <div class="robot-desc-box">
+              <p>Description of the robot for Meet 1 will go here.</p>
+            </div>
+          </div>
+        </div>
+        <div class="robot-section">
+          <div class="robot-section-title">Meet 2</div>
+          <div class="robot-section-grid">
+            <div class="robot-photo-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="6" y="8" width="12" height="10" rx="1"/><path d="M9 8V5h6v3M9 18v2M15 18v2M3 12h3M18 12h3"/></svg>
+              <span class="mono">Robot Photo</span>
+            </div>
+            <div class="robot-desc-box">
+              <p>Description of the robot for Meet 2 will go here.</p>
+            </div>
+          </div>
+        </div>
+        <div class="robot-section">
+          <div class="robot-section-title">Meet 3</div>
+          <div class="robot-section-grid">
+            <div class="robot-photo-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="6" y="8" width="12" height="10" rx="1"/><path d="M9 8V5h6v3M9 18v2M15 18v2M3 12h3M18 12h3"/></svg>
+              <span class="mono">Robot Photo</span>
+            </div>
+            <div class="robot-desc-box">
+              <p>Description of the robot for Meet 3 will go here.</p>
+            </div>
+          </div>
+        </div>
+        <div class="robot-section">
+          <div class="robot-section-title">League Tournament</div>
+          <div class="robot-section-grid">
+            <div class="robot-photo-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="6" y="8" width="12" height="10" rx="1"/><path d="M9 8V5h6v3M9 18v2M15 18v2M3 12h3M18 12h3"/></svg>
+              <span class="mono">Robot Photo</span>
+            </div>
+            <div class="robot-desc-box">
+              <p>Description of the robot for League Tournament will go here.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BioBuzz Subtab -->
+      <div class="season-tab-content" id="biobuzz">
+        <div class="robot-section">
+          <div class="robot-section-title">Meet 1</div>
+          <div class="robot-section-grid">
+            <div class="robot-photo-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="6" y="8" width="12" height="10" rx="1"/><path d="M9 8V5h6v3M9 18v2M15 18v2M3 12h3M18 12h3"/></svg>
+              <span class="mono">Robot Photo</span>
+            </div>
+            <div class="robot-desc-box">
+              <p>Description of the robot for Meet 1 will go here.</p>
+            </div>
+          </div>
+        </div>
+        <div class="robot-section">
+          <div class="robot-section-title">Meet 2</div>
+          <div class="robot-section-grid">
+            <div class="robot-photo-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="6" y="8" width="12" height="10" rx="1"/><path d="M9 8V5h6v3M9 18v2M15 18v2M3 12h3M18 12h3"/></svg>
+              <span class="mono">Robot Photo</span>
+            </div>
+            <div class="robot-desc-box">
+              <p>Description of the robot for Meet 2 will go here.</p>
+            </div>
+          </div>
+        </div>
+        <div class="robot-section">
+          <div class="robot-section-title">Meet 3</div>
+          <div class="robot-section-grid">
+            <div class="robot-photo-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="6" y="8" width="12" height="10" rx="1"/><path d="M9 8V5h6v3M9 18v2M15 18v2M3 12h3M18 12h3"/></svg>
+              <span class="mono">Robot Photo</span>
+            </div>
+            <div class="robot-desc-box">
+              <p>Description of the robot for Meet 3 will go here.</p>
+            </div>
+          </div>
+        </div>
+        <div class="robot-section">
+          <div class="robot-section-title">League Tournament</div>
+          <div class="robot-section-grid">
+            <div class="robot-photo-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="6" y="8" width="12" height="10" rx="1"/><path d="M9 8V5h6v3M9 18v2M15 18v2M3 12h3M18 12h3"/></svg>
+              <span class="mono">Robot Photo</span>
+            </div>
+            <div class="robot-desc-box">
+              <p>Description of the robot for League Tournament will go here.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -517,7 +745,7 @@
 <!-- ========== FOOTER ========== -->
 <footer>
   <div class="foot">
-    <span>© 2026 Team <span class="bolt-word">Boltic</span> // FTC Robotics</span>
+    <span>© 2026 Team Boltic // FTC Robotics</span>
     <span>Built for the build season</span>
   </div>
 </footer>
@@ -555,6 +783,42 @@
       // Remove active class from all tabs and contents
       impactTabs.forEach(t => t.classList.remove('active'));
       impactTabContents.forEach(c => c.classList.remove('active'));
+      
+      // Add active class to clicked tab and corresponding content
+      tab.classList.add('active');
+      document.getElementById(tabId).classList.add('active');
+    });
+  });
+
+  // Guides Tab Switching
+  const guidesTabs = document.querySelectorAll('.guides-tab');
+  const guidesTabContents = document.querySelectorAll('.guides-tab-content');
+
+  guidesTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const tabId = tab.dataset.tab;
+      
+      // Remove active class from all tabs and contents
+      guidesTabs.forEach(t => t.classList.remove('active'));
+      guidesTabContents.forEach(c => c.classList.remove('active'));
+      
+      // Add active class to clicked tab and corresponding content
+      tab.classList.add('active');
+      document.getElementById(tabId).classList.add('active');
+    });
+  });
+
+  // Season Tab Switching
+  const seasonTabs = document.querySelectorAll('.season-tab');
+  const seasonTabContents = document.querySelectorAll('.season-tab-content');
+
+  seasonTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const tabId = tab.dataset.tab;
+      
+      // Remove active class from all tabs and contents
+      seasonTabs.forEach(t => t.classList.remove('active'));
+      seasonTabContents.forEach(c => c.classList.remove('active'));
       
       // Add active class to clicked tab and corresponding content
       tab.classList.add('active');
